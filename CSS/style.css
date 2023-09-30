@@ -1,0 +1,633 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kanit:ital,wght@0,300;0,400;1,400&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+body
+{   
+    font-family: 'Kanit', sans-serif;
+}
+/*----------------------NAVBAR--------------------*/
+#navbar
+{
+    position: sticky;
+    z-index: 10;
+}
+.navbar
+{
+    background-image: linear-gradient(to bottom, #010101, #1e1d1d);
+    padding: 0 !important;
+    
+    
+}
+/*logo*/
+.navbar-brand img
+{
+    height: 60px;
+    padding-left: 10px;
+}
+/*buttons*/
+.navbar-nav li a
+{
+    color: #27b145 !important;
+    font-weight: 800;
+    float: right;
+    text-align: right;
+    font-size: 20px;
+    margin-left: 30px;
+    
+}
+.navbar-nav li a
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+}
+.navbar-nav li a::after
+{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background: #06783f;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+
+.navbar li a:hover::after
+{
+    width: 100%;
+
+}
+
+/*bar icon*/
+.fa-bars
+{
+    color: #0079009c;
+    font-size: 25px;
+}
+/*------------------banner---------------*/
+
+#banner
+{   
+    background-image: linear-gradient(to bottom, #1e1d1d, #fdfdfd);
+    color: #000000;
+    padding-top: 5%;
+   
+}
+#banner .container .row .col-md-6 img {
+    margin-left: 330px;
+    height: 300px;
+    
+}
+#banner .container .row .col-md-6 img:hover {
+    transform: translateX(-40px);
+    transition: 0.5s;
+    
+}
+
+.home-title
+{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 90px;
+    font-family:'Segoe UI';
+    font-style: normal;
+    
+}
+.home-title
+{
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 100px;
+    color: #efefef;
+    text-shadow: 0px 2px  rgba(20, 108, 80, 0.381);
+}
+.home-text1
+{
+    font-size: 22px;
+    font-weight: 200;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #eaedeb;
+    text-shadow: 0px 2px  rgba(0, 0, 0, 0.1);
+}
+
+.home-title:hover
+{
+    transform: translateX(8px) ;
+    transition: 0.7s;
+}
+
+.home-text1:hover
+{
+    transform: translateX(8px) ;
+    transition: 0.7s;
+}
+
+.text-box
+{
+    width: 100%;
+    color: #000000;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate (-50%, -50%);
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*----------------Blog----------------*/
+
+.container
+{
+    width: 100%;
+
+}
+.container .row
+{
+    width: 80%;
+    margin:auto;
+}
+.container .row .header
+{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.container .row .header h1
+{
+    padding-top: 20px;
+    font-size: 40px;
+    color: #2a2424
+}
+.container .row .header p
+{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #334e48
+}
+
+/*styling of boxes*/
+.content
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.content .card
+{
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1);
+    background-color: #e3e1e1;
+}
+.content .card img
+{
+    width: 100%;
+    height: auto;
+}
+
+.content .card:hover
+{
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+.container .row .header h1::after
+{
+    content: '';
+    width: 15%;
+    height: 1px;
+    background: #39363625;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.container .row .header h1:hover::after
+{
+    width: 80%;
+
+}
+.content .card h4
+{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 22px;
+}
+.content .card p
+{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 17px;
+    color:#514a4a;
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px){
+    .content{
+        flex-direction: column;
+    }
+}
+
+/*-------------------Footer-----------------*/
+
+#footer{
+    background-image: linear-gradient(to bottom, #ffffff, #1c1a1a);
+}
+.footer-box{
+    padding: 30px;
+    color: #575656e9 !important;
+    
+}
+#footer a{
+    padding: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4241419d;
+    font-style: oblique;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-underline-offset: 0;
+    text-decoration: none;
+    text-shadow: 0px 3px  rgba(0, 0, 0, 0.1);
+
+    
+    color: #201e1eaf;
+    position: relative;
+    animation-name: footeranimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#footer h2{
+    padding-left: 1100px;
+    font-size: 14px;
+    color: #ababab;
+    font-style: oblique;
+    font-family: 'Kanit', sans-serif;
+}
+#footer a:hover{
+    transform: translateY(-4px);
+    transition: 0.2s;
+}
+@keyframes footeranimation {
+    0%   {color:rgba(66, 64, 64, 0.534); left:150px; top:0px;}
+    25%  {color:rgba(59, 59, 59, 0.662); left:145px; top:0px;}
+    50%  {color:rgba(29, 29, 122, 0.272); left:140px; top:0px;}
+    75%  {color:rgba(0, 0, 0, 0.406); left:145px; top:0px;}
+    100% {color:rgba(11, 7, 7, 0.605); left:150px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+  
+/*-------------------Compare page-------------*/
+.compare{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 110px
+}
+
+/*header of compare page*/
+.compare h1{
+    font-size: 30;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+}
+
+.compare h1::after{
+    content: '';
+    width: 5%;
+    height: 1px;
+    background: #3f3d3d23;
+    display: block;
+    margin: auto;
+    transition: 0.5s; 
+}
+
+.compare h1:hover::after{
+    width: 60%;
+}
+
+.compare p{
+    color: #4d4a4a;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 13px;
+    font-family: 'Kanit', sans-serif;
+}
+
+#bg{
+    background-image: url('https://media.giphy.com/media/oLzgl79VN6bbrQUSLe/giphy.gif');
+    background-repeat: repeat;
+    background-size: 1700px 1200px;
+    background-position: center;
+    position: absolute;
+  right: 0;
+  bottom: 100;
+  min-width: 100%; 
+  min-height: 100%;
+ 
+    
+}
+/*select header*/
+.compare .row .compcat-col h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.compare .row{
+    margin-top: 22%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.compare-col{
+    flex-basis: 31%;
+    background: #e6e6e682;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: border-box;
+    position: relative;
+}
+.compare h3{
+    text-align: center;
+    font-weight: 500;
+    margin: 10px 0;
+
+}
+
+/* Dropdown Button styling */
+.dropbtn {
+    background-color: #343b3a77;
+    color: white;
+    padding: 6px;
+    font-size: 18px;
+    border:#7d7d7d2f;
+    width: 400px;
+    height: 35px;
+
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #eee6e667;}
+
+
+
+  /* Dropdown Button 1 Styling*/
+.compare .row .dropdown .dropbtn1 {
+    background-color: #38373786;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    width: 400px;
+    height: 40px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn1 {background-color: #f1f1f16f;}
+
+
+/*-----------------CONTACT------------*/
+.contact{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 250px;
+}
+.contact h1{
+    font-size: 30;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+}
+.contact h1::after{
+    content: '';
+    width: 5%;
+    height: 1px;
+    background: #3f3d3d23;
+    display: block;
+    margin: auto;
+    transition: 0.5s; 
+}
+
+.contact h1:hover::after{
+    width: 60%;
+}
+/*contact form styling*/
+.contact .contact-col{
+    box-sizing: border-box;
+    background: #e6e6e682;
+    border-radius: 10px;
+    margin-bottom: 10%;
+    padding: 30px 12px;
+    position: relative;
+    text-align: left;
+}
+.contact input {
+    width: 20%;
+    padding: 10px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    border: 1px rgba(59, 54, 54, 0.55);
+  }
+  .contact input {
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .contact input:focus {
+    width: 50%;
+  }
+  /*message are style*/
+  textarea {
+    width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+/*submit button styling*/
+  .contact .contact-col .btn[type="submit"] {
+    background-color: rgba(60, 174, 54, 0.518); 
+    border: none;
+    color: rgb(255, 255, 255); 
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-bottom: 3%;
+    
+  }
+/*reset button styling*/
+  .contact .contact-col .btn[type="reset"] {
+    background-color: rgba(60, 174, 54, 0.518); 
+    border: none;
+    color: rgb(255, 255, 255); 
+    padding: 10px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 1%;
+    margin-bottom: 3%;
+  }
+  /*hover of buttons*/
+  .contact .contact-col .btn[type="submit"]:hover {
+    background-color: rgba(65, 217, 225, 0.747);
+  }
+  .contact .contact-col .btn[type="reset"]:hover {
+    background-color: rgba(140, 23, 186, 0.747);
+  }
+  /*styling text for labels*/
+  .contact label{
+    position: relative;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 1%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+/*styling text*/
+  .contact .contact-col p{
+    margin-left: 15%;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 13px;
+    font-family: 'Kanit', sans-serif;
+  }
+
+  /*-----------ABOUT US PAGE-----------*/
+  .about{
+    background: #d9d9d9;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+  }
+/*header*/
+  .about h1{
+    font-size: 30;
+    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 1%;
+}
+.about h1::after{
+    content: '';
+    width: 5%;
+    height: 1px;
+    background: #3f3d3d23;
+    display: block;
+    margin: auto;
+    transition: 0.5s; 
+}
+
+.about h1:hover::after{
+    width: 60%;
+}
+
+.about .about-col .row .aboutdescription{
+    font-size: 20px;
+}
+/*description*/
+.about  ul li{
+    margin: 5px 0;
+    text-align: left;
+    font-size: 15px;
+    margin-left: 520px;
+}
+/*icons*/
+.about .about-col .row .icons{
+    padding: 80px 16px;
+    font-size: 50px;
+    cursor: pointer;
+    margin-bottom: 1%;
+    
+}
+
+.about .about-col .row .icons h2{
+    
+    font-size: 20px;
+    
+    
+}
+
+@keyframes iconanimation {
+    0%   {color:rgba(22, 150, 175, 0.523); left:600px; top:0px;}
+    25%  {color:rgba(230, 59, 190, 0.564); left:550px; top:0px;}
+    50%  {color:rgba(77, 77, 236, 0.511); left:700px; top:0px;}
+    75%  {color:rgba(50, 25, 126, 0.477); left:600px; top:0px;}
+    100% {color:rgb(40, 62, 188); left:600px; top:0px;}
+  }
+  
+  /* The element to apply the animation to */
+  .about .about-col .row .icons {
+    width: 400px;
+    height: 150px;
+    left: 600px;
+    color: #343030;
+    position: relative;
+    animation-name: iconanimation;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+  }
